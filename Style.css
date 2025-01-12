@@ -1,0 +1,39 @@
+html {
+    font-family: 'Sedan SC', sans-serif;
+  }
+p  {
+    font-size: 16pt;
+}
+.remark-slide-content h1 {
+    font-size: 48pt;
+}
+body {
+    line-height: 1.6;
+    background-color: #f9f9f9;
+}
+img  {
+  margin: 0pt;
+}
+.remark-slide-content h1, h2, h3, h4 {
+    color: #99534B;
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+.remark-slide-content ul {
+    padding-left: 25px;
+}
+.left-column {
+width: 50%;
+height: 92%;
+float: left;
+}
+.right-column {
+width: 50%;
+float: left;
+padding-top: 1em;
+}
+.footnote {
+position: absolute;
+bottom: 3em;
+font-size: 12pt;
+}

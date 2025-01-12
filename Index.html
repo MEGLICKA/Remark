@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="Style.css">	
+    <title>Dinamika ljubezni: Romeo in Julija</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Caveat:wght@400..700&family=Sedan+SC&display=swap" rel="stylesheet"> 
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+</head>
+<body>
+    <textarea id="source" style="display:none;">
+
+class: middle
+background-image: url(Ozadje2.png)
+background-size: contain
+background-repeat: 
+
+
+# Dinamika ljubezni: Romeo in Julija
+
+---
+background-image: url(Ozadje1.png)
+
+
+## Romeo in Julija
+
+Romeo in Julija sta mlada zaljubljenca, ki ju ločuje 
+določena razdalja. Vsako jutro **ob natanko 9:00 zapustita 
+svoji hiši** in hodita drug proti drugemu s konstantnima 
+hitrostma. Vsak dan **se srečata ob 10:00 in delita prvi 
+poljub dneva.**
+
+
+.center[<img src=Slika1.png height="350">]
+
+---
+background-image: url(Ozadje1.png)
+
+### Težava z zamudo
+
+Danes je Romeo zaspal in zapustil svojo hišo šele **ob 
+9:30.** Julija, nič hudega sluteča, je že hodila proti njemu. 
+**Prvi poljub sta si tokrat delila ob 10:21.**
+
+.center[<img src=Spanec.png height="180">]
+--
+count: false
+
+### Kdaj naj Romeo zapusti hišo, da preseneti Julijo?
+
+Romeo želi naslednji dan vstati zgodaj in hoditi do Julijine hiše, da bi jo **presenetil ob 
+9:00.** Kdaj mora zapustiti svojo hišo?
+
+---
+layout: false
+background-image: url(Ozadje1.png)
+
+## Oblikujmo matematični problem
+
+Naj bo:
+- **D** - razdalja med hišama,
+- **R** - hitrost Romea,
+- **J** - hitrost Julije.
+
+--
+count: false
+
+Na običajen dan velja:
+$$ \text{čas} = \frac{\text{razdalja}}{\text{hitrost}} \implies
+\frac{D}{R+J}=1 $$
+
+--
+count: false
+background-image: url(Ozadje1.png)
+
+Ko Romeo zamuja, je razdalja manjša za pot, ki jo 
+Julija prehodi v pol ure: $D - \frac{1}{2}J$. Srečanje ob 10:21 pomeni, 
+da je Romeo hodil 51 minut:
+
+$$ \frac{D - \frac{1}{2}J}{R + J} = \frac{51}{60} $$
+
+---
+count: false
+background-image: url(Ozadje1.png)
+## Oblikujmo matematični problem
+
+Z zamenjavo vrednosti in poenostavitvijo enačbe ugotovimo, 
+da je **Romeo več kot dvakrat hitrejši od Julije**.
+
+$$ \frac{D - \frac{1}{2}J}{R + J} = \frac{51}{60} $$
+$$ 60(R + J - \frac{1}{2}J) = 51(R+J) $$
+$$ 60R + 30J = 51R + 51J $$
+$$ J = \frac{9}{21}R $$
+
+---
+background-image: url(Ozadje1.png)
+
+## Kdaj mora Romeo oditi?
+
+Da prehodi celotno razdaljo **D** s svojo hitrostjo **R**, 
+potrebuje:
+
+$$ 1 = \frac{D}{R(1+\frac{9}{21})} $$
+$$ \implies \frac{D}{R}= \frac{30}{21} \approx 1\; hr\; 25\; min\; 43\; s $$
+
+--
+count: false
+
+.center[Zato mora Romeo zapustiti svojo hišo ob **7:34:17**. S seboj naj morda prinese še rože.
+
+<img src=Roze.png height="230">]
+
+---
+background-image: url(Ozadje1.png)
+
+## Romeo želi skriti svojo zamudo
+
+Danes pa je Romeo zaspal in zamudil svoj običajni čas odhoda! A da Julija ne bi ničesar posumila, mora povečati hitrost, da se bosta srečala ob 10:00 kot običajno.
+
+.center[
+**Glede na čas odhoda Romea ugotavljaj, kako hitro mora Romeo hoditi, če ima Julija konstantno hitrost 3 km/h!**
+
+<div id="sliderSimulation">
+  <label>💨 Hitrost Romea (km/h):</label>
+  <input type="range" id="speedRomeoSlider" min="1" max="20" step="0.1" value="5">
+  <span id="romeoSpeedValue">5</span> km/h
+  <br>
+  <label>👣 Hitrost Julije (km/h):</label>
+  <input type="range" id="speedJulietSlider" min="1" max="20" step="0.1" value="3">
+  <span id="julietSpeedValue">3</span> km/h
+  <br>
+  <p id="sliderOutput">Rezultat bo prikazan tukaj.</p>
+</div>
+
+Nato lahko ustvariš nove scenarije, kjer Julijina hitrost ni 3 km/h.
+]
+
+---
+background-image: url(Ozadje1.png)
+## Viri
+
+**Ustvarjeno po zgodbi [Romeo and Juliet](https://datagenetics.com/blog/march42021/index.html).** 
+
+#### Viri slik:
+- ozadje: https://www.pinterest.com/pin/2322237299885472/
+- slika s prosojnice 2: https://www.pinterest.com/pin/67554063156654518/
+- slika s prosojnice 3: https://www.pinterest.com/pin/1146306911389356340/
+- slika s prosojnice 5: https://www.pinterest.com/pin/718816790537178369/
+- slika 'fav icon': https://www.pinterest.com/pin/14355292553389316/
+
+Odstranjevanje ozadij slik s pomočjo orodja, dostopnega na [Photoroom](https://www.photoroom.com/tools/background-remover).
+
+.footnote[Avtor: Julija Meglič; Ljubljana, 12. 01. 2025]
+
+    </textarea>
+    <script src="https://remarkjs.com/downloads/remark-latest.min.js">
+    </script>
+    <script>
+      var slideshow = remark.create();
+    </script>
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [['$', '$'], ['\\(', '\\)']]
+        },
+        svg: {
+          fontCache: 'global'
+        }
+      };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+    </script>
+
+<script src="Script.js"></script>
+</body>
+</html>
